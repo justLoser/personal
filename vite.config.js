@@ -7,6 +7,7 @@ const config = {
     '/styles/': path.resolve(__dirname, './src/assets/css'),
     '/commonSrc/': path.resolve(__dirname, './src/assets/js')
   },
+  base: '/personal/',
   outDir: 'docs'
 }
 
