@@ -8,6 +8,8 @@ const config = {
     '/commonSrc/': path.resolve(__dirname, './src/assets/js')
   },
   base: '/personal/',
+  publicDir: '/personal/',
+  assetsDir: 'static',
   outDir: 'docs'
 }
 
