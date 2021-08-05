@@ -1,13 +1,13 @@
 const path = require('path')
-export default {
-  resolve: {
-    alias: {
-      '@': path.join(__dirname, './src/'),
-      'styles': path.join(__dirname, './src/assets/css/'),
-      'commonSrc': path.join(__dirname, './src/assets/js/')
-    }
+console.log(path.resolve(__dirname, './src'))
+
+const config = {
+  alias: {
+    '/@/': path.resolve(__dirname, './src'),
+    '/styles/': path.resolve(__dirname, './src/assets/css'),
+    '/commonSrc/': path.resolve(__dirname, './src/assets/js')
   },
-  build: {
-    outDir: 'docs'
-  }
+  outDir: 'docs'
 }
+
+export default config
